@@ -1,42 +1,479 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps */
+body{
+  height: 100vh;
+  background-color: #dcdcdc;
+}
+.container{
+  background-color: #dcdcdc;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Logo */
+.logo{
+  color: white;
+  position: absolute;
+  left: 50px;
+}
+
+/* Barre de navigation */
+
+#navbar{
+  background-color: #562F85;
+  height: 70px;
+  width: 84%;
+  color: white; 
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 219px;
+  border-bottom: 2px solid white;
+}
+
+/* barre de recherche */
+
+.searchbar{
+  background-color: #e4ffecc1;
+  border: 1px solid white;
+  height: 35px;
+  width: 200px;
+  position: absolute;
+  right: 180px;
+  border-radius: 9px;
+  color: #160130;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.searchbar::placeholder{
+  color: #5439768c;
+}
+
+
+/* de profil */
+
+.profile{
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  right: 130px;
+  border-radius: 100%;
+  border: 2px solid #160130;
+  
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  width: 16%;
+  height: 800px;
+  background-color: #562F85;
+  border-bottom: white;
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+/* Composant de la sidebar */
+
+
+.sidebar{
+  color: white;
+  font-size: 18px;
+}
+
+.fisrt-component{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 180px;
+  position: absolute;
+  top: 90px;
+  left: 18px;
+  
+}
+
+.first-component .fi-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.fisrt-component:hover{
+  background-color: #fbecff;
+  border-radius: 15px;
+  color: #160130;
+
+}
+
+/* Deuxième composant */
+
+.second-component{
+  position: absolute;
+  top: 30px;
+  height:40px;
+  width: 150px;
+  border-bottom: 2px solid ;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.second-component .fi-2{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Troisième composant */
+
+
+.third-component:hover{
+  background-color: #fbecff;
+  border-radius: 15px;
+  color: #160130;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.third-component{
+  height: 50px;
+  width: 180px;
+  position: absolute;
+  top: 190px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+/* disposition des blocks des apprenants */
+
+.student{
+  background-color: #e395ffa7;
+  border: 1px solid black;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+
 }
 
-.read-the-docs {
-  color: #888;
+
+
+.student1{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 250px;
+}
+
+.student2{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 350px;
+}
+
+.student3{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 450px;
+}
+
+.student4{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 550px;
+}
+
+.student5{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 650px;
+}
+
+.student6{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 750px;
+}
+
+.student7{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 850px;
+}
+
+.student8{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 950px;
+}
+
+.student9{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1050px;
+}
+
+.student10{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1150px;
+}
+
+.student11{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1250px;
+}
+
+.student12{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1350px;
+}
+
+.student13{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1450px;
+}
+
+.student14{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1550px;
+}
+
+.student15{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1650px;
+}
+
+.student16{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1750px;
+}
+
+.student17{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1850px;
+}
+
+.student18{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 1950px;
+}
+
+.student19{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 2050px;
+}
+
+.student20{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 2150px;
+}
+
+.student21{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  right: 60px;
+  top: 2250px;
+}
+/* boutons */
+.par-btn{
+  display: flex;
+  gap: 10px;
+}
+
+.btn-crud{
+  background-color: #160130;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Photo de profil */
+
+.prof1{
+  height: 50px;
+  width: 50px;
+  background-image: url();
+  border-radius: 100%;
+  border: 2px solid #160130;
+  text-align: center;
 }
